@@ -1,11 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+//components:
+import QuestionCard from './components/QuestionCard'
 function App() {
+  
+  const startTrivia = async () => {
+
+
+  } 
+  
+  const checkAnswer = (e: React.MouseEvent <HTMLButtonElement>) => {
+
+  }
+
+  const nextQuestion = () => {
+
+  }
+  
+  
   return (
     <div className="App">
-         Quiz
+         <h1>Book Trivia</h1>
+         <button className="start" onClick={startTrivia}>
+          Start
+         </button>
+         <p className="score"> Score: </p>
+         <p>Loading next question...</p>
+         <QuestionCard/>
+         <p></p>
+         <button className="next" onClick={nextQuestion}>Next Question</button>
+
     </div>
   );
 }
