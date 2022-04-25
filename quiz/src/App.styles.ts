@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import BGImage from '/Users/marilynmarquez/Documents/GitHub/quiz/src/images/jimmy-jin.jpg';
+import BGImage from '/Users/marilynmarquez/Documents/GitHub/quiz/src/images/maxim-berg.jpg';
 
 export const GlobalStyle = createGlobalStyle`
   html {
@@ -33,6 +33,7 @@ export const Wrapper = styled.div`
   .score {
     color: #fff;
     font-size: 2rem;
+    font-weight:bold;
     margin: 0;
   }
 
@@ -46,7 +47,7 @@ export const Wrapper = styled.div`
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    filter: drop-shadow(2px 2px #0085a3);
+    filter: drop-shadow(1px 1px #0085a3);
     font-size: 70px;
     text-align: center;
     margin: 20px;
@@ -56,8 +57,8 @@ export const Wrapper = styled.div`
     cursor: pointer;
     background: linear-gradient(180deg, #ffffff, #ffcc91);
     border: 2px solid #d38558;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0);
+    border-radius: 25px;
     height: 40px;
     margin: 20px 0;
     padding: 0 40px;
