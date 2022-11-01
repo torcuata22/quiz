@@ -7,7 +7,7 @@ from django.core.paginator import Paginator
 def movie_list(request):
     movie_objects = Movies.objects.all()
 
-    movie_name=request.GET.get('movie_name') #same name as the inout field in the search form on the template
+    movie_name=request.GET.get('movie_name') #same name as the input field in the search form on the template
     if movie_name != '' and movie_name is not None:
         movie_objects = movie_objects.filter(name__icontains = movie_name) #name__icontains returns match that contains items from search, not exact match
 
